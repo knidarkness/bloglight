@@ -1,0 +1,24 @@
+{{>header}}
+<main class="grid">
+    <div class="row">
+        <div class="column column_9">
+            {{#each posts}}
+                <article class='blog-post'>
+                    <h2 class='blog-post__title'><a href="{{path_prefix}}post/{{id}}">{{title}}</a></h2>
+                    <p class='blog-post__preview'>{{{description}}}</p>
+                    <a class='blog-post__read-more' href="{{path_prefix}}post/{{id}}">Read more</a>
+                </article>
+            {{/each}}
+            <section class="blog-pagination">
+                <a class="blog-pagination__link" href="{{path_prefix}}page/1"><<</a>
+                <a class="blog-pagination__link" href="{{path_prefix}}page/1"><</a>
+                <a class="blog-pagination__link" href="{{path_prefix}}page/1">></a>
+                <a class="blog-pagination__link" href="{{path_prefix}}page/last">>></a>
+            </section>
+        </div>
+        <div class="column column_3">
+            {{>nav_menu}}
+        </div>
+    </div>
+</main>
+{{>footer}}

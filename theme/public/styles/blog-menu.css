@@ -1,0 +1,15 @@
+.blog-menu {
+  margin: 10px; }
+  .blog-menu__item {
+    color: black;
+    margin-top: 10px;
+    font-size: 1.2rem; }
+
+@media screen and (min-width: 750px) {
+  .blog-menu__item {
+    display: block; }
+    .blog-menu__item:hover {
+      transition: all 0.1s;
+      transform: rotate(9deg); } }
+
+/*# sourceMappingURL=blog-menu.css.map */

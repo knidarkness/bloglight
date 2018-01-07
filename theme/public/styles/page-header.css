@@ -1,0 +1,9 @@
+.page-header {
+  font-size: 2rem;
+  background: white; }
+  .page-header__title, .page-header a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif; }
+
+/*# sourceMappingURL=page-header.css.map */

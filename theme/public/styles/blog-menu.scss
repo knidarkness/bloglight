@@ -1,0 +1,22 @@
+.blog-menu{
+  margin: 10px;
+
+  &__item{
+
+    color:black;
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 750px){
+  .blog-menu{
+    &__item{
+      display:block;
+      &:hover{
+        transition: all 0.1s;
+        transform: rotate(9deg);
+      }
+    }
+  }
+}

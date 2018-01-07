@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,gBAAgB;EACd,UAAU,EAAE,MAAM;EAElB,sBAAO;IACL,KAAK,EAAE,KAAK",
+"sources": ["blog-pagination.scss"],
+"names": [],
+"file": "blog-pagination.css"
+}

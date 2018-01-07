@@ -1,0 +1,22 @@
+.blog-post{
+  font-size: 0.875rem;
+  &__title{
+    color: black;
+    text-decoration: none;
+    *{
+      color: black;
+      text-decoration: none;
+    }
+  }
+
+  &__read-more {
+    color: black;
+    font-style: italic;
+    transition: all 0.1s ease-in;
+
+    &:hover{
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+

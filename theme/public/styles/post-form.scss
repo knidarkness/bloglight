@@ -1,0 +1,22 @@
+.post-form{
+  &__label{
+    margin: 20px 0 20px 0;
+    width: 100%;
+    font-size:2rem;
+  }
+
+  &__input{
+    margin: 20px 0 20px 0;
+    width: 100%;
+    resize: none;
+    overflow-y: hidden;
+
+    &_text-area{
+      margin-top: 20px;
+    }
+  }
+}
+
+.mce-tinymce{
+  margin: 20px 0 20px 0 !important;
+}

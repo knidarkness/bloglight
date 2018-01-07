@@ -1,0 +1,8 @@
+.search-form {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap; }
+  .search-form__search-field {
+    width: 100%; }
+
+/*# sourceMappingURL=search-form.css.map */

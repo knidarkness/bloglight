@@ -1,0 +1,10 @@
+.page-header{
+  font-size: 2rem;
+  background: white;
+
+  &__title, a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+  }
+}

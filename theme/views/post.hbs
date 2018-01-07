@@ -1,0 +1,37 @@
+{{>header}}
+<main class="grid">
+    <div class="row">
+        <div class="column column_9">
+            <article class='blog-post'>
+                <h2 class='blog-post__title'>{{post.title}}</h2>
+                <p class="blog-post__content">{{{post.content}}}</p>
+            </article>
+            <section class="comments-area">
+                {{#each comments}}
+                    <div class="post-comment">
+                        <header class="post-comment__header">
+                            <h3 class="post-comment__author">{{author}}</h3>
+                            <time>{{createdAt}}</time>
+                        </header>
+                        <p class="post-comment__body">
+                            {{content}}
+                        </p>
+                    </div>
+                {{/each}}
+                <form action="/post/{{post.id}}" method="post" class="comment-form">
+                    <label for="username">Nickname:</label>
+                    <input id="username" class="comment-form__email" type="text" placeholder="Nickname" name="author" required>
+                    <label for="email">Email:</label>
+                    <input id="email" class="comment-form__email" type="email" placeholder="email" name="author_email" required>
+                    <label for="comment-body">Your comment</label>
+                    <textarea id="comment-body" class="comment-form__comment-body" rows="6" placeholder="Your comment" name="content" required></textarea>
+                    <input type="submit" value="Save">
+                </form>
+            </section>
+        </div>
+        <div class="column column_3">
+            {{>nav_menu}}
+        </div>
+    </div>
+</main>
+{{>footer}}
