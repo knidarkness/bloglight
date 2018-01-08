@@ -1,6 +1,6 @@
 {
   "name": "bloglight",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "This is a simple blog engine built on Node.js, Express.js and Sequelize. You can use it when you need a quick setup for you site.",
   "keywords": [
     "blog",
