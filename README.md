@@ -1,4 +1,5 @@
 # Bloglight
+[![Build Status](https://travis-ci.org/knidarkness/bloglight.svg?branch=master)](https://travis-ci.org/knidarkness/bloglight)
 ## Overview
 Bloglight is an Express-based blog engine for Node.js. It uses Passport.js for authorization and Handlebars as default template system, but both can be changed as shown in Usage section.
 ## Installation
