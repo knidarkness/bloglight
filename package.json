@@ -7,10 +7,7 @@
   "scripts": {
   },
   "author": "knidarkness@gmail.com",
-  "license": "ISC",
-  "devDependencies": {
-    "webpack-dev-server": "^2.9.7"
-  },
+  "license": "MIT",
   "dependencies": {
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
@@ -22,7 +19,6 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "sequelize": "^4.28.7",
-    "sqlite3": "^3.1.13",
-    "webpack": "^3.10.0"
+    "sqlite3": "^3.1.13"
   }
 }

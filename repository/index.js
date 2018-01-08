@@ -4,8 +4,14 @@ const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
 const basename = path.basename(__filename);
-const env = process.env.NODE_ENV || 'development';
-const config = require(path.join(path.dirname(require.main.filename), 'sequelize.config.js'))[env];
+
+let config;
+const importedConfigPath = path.join(path.dirname(require.main.filename), 'sequelize.config.js');
+if (fs.existsSync(importedConfigPath)){
+    config = require(importedConfigPath);
+} else {
+    config = require(path.join(__dirname, '..', 'sequelize.config.js'))
+}
 const db = {};
 
 let sequelize = new Sequelize(config.database, config.username, config.password, config);
