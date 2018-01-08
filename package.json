@@ -2,11 +2,25 @@
   "name": "bloglight",
   "version": "0.1.0",
   "description": "This is a simple blog engine based on Node.js, Express.js and Sequelize. You can use it when you need a quick setup for you site.",
+  "keywords": [
+    "blog",
+    "blog engine",
+    "simple",
+    "engine",
+    "express"
+  ],
   "repository": "https://github.com/knidarkness/bloglight.git",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
   "author": "knidarkness@gmail.com",
   "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0",
+    "request": "^2.83.0"
+  },
   "dependencies": {
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
